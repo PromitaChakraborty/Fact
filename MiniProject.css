@@ -27,22 +27,13 @@ body{
     align-items: center;
    gap: 30px;
 }
-.Source{
-    color:blue;
-
-}
-
-
-.Source:hover{
-    color:red;
-    transition: 0.3s;
-}
 
 
 .main{
     display: grid;
     grid-template-columns: 250px 1fr;
-    gap:48px
+    gap:48px;
+    padding-left: 3px;
 }
 h1{
     font-size: 40px;
@@ -57,6 +48,23 @@ h1{
     background-color: #44403c;
     margin-bottom: 30px;
 }
+
+.fact-form input,.fact-form select{
+    background-color: #78716c;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    
+   
+}
+.fact-form ::placeholder{
+    color:#fafaf9;
+    font-family: "Coiny" ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.value{
+    flex-grow: 1;
+}
 .fact{
     font-size: 15px;
     line-height: 1.5;
@@ -68,9 +76,31 @@ h1{
    
     
 }
+
+
+
 .vote-buttons{
     margin-left:  auto;
     
+    
+    
+}
+
+.vote-buttons button{
+    background-color:#78716c;
+    border: none;
+    border-radius:30px ;
+    padding: 10px 15px;
+    color:#fafaf9;
+    font-family: "Coiny" ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    gap: 5px;
+    transition: 0.3s;
+
+
+}
+
+.vote-buttons button:hover{
+    background-color: #292524;
 }
 
 
@@ -88,4 +118,55 @@ h1{
 ul{
     list-style: none;
 
+}
+
+.Source{
+    color: red;
+}
+
+.Source:hover{
+    color: blue;
+    transition: 0.3s;
+}
+
+.Source:active{
+    color: green;
+}
+
+.btn{
+    border: none;
+    padding: 10px 15px;
+    
+    background-image: linear-gradient( 120deg,#3b82f6,#ef4444,#16a34a,#eab308);
+    font-family:"Coiny";
+    color:#fafaf9;
+    font-size: 15px;
+    border-radius: 20px;
+   
+    
+}
+.btn:hover{
+    transform: scale(120%) rotate(-5deg);
+    transition: 0.3s;
+    
+}
+
+ .btn1{
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+
+ .button-all{
+    
+    background-image: none;
+    margin-bottom: 10px;
+    width: 100%;
+
+ }
+
+.button2{
+    padding: 10px 20px;
+    margin-left:10px;
 }
